@@ -1,0 +1,19 @@
+GET http://localhost:3001/products
+
+###
+
+GET http://localhost:3001/products/60f4660e3881e415e054714d
+
+### 
+
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+    "name": "Test product5",
+    "qty": 20,
+    "price": 25.20
+}
+
+###
+DELETE http://localhost:3001/products/60f46315d68c9036a05f7e2e
