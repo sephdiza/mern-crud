@@ -1,21 +1,21 @@
-import {useState} from 'react'
+import { useState } from "react";
 
 const useForm = (defaultValues) => {
-    const [values, setValues] = useState(defaultValues)
+  const [values, setValues] = useState(defaultValues);
 
-    const handleChange = (e) => {
-       const { name, value } = e.target
+  const handleChange = (e) => {
+    const { name, value } = e.target;
 
-       setValues({
-           ...values,
-           [name]: value
-       })
-    }
+    setValues({
+      ...values,
+      [name]: value,
+    });
+  };
 
-    return {
-        handleChange,
-        values
-    }
-}
+  return {
+    handleChange,
+    values,
+  };
+};
 
-export default useForm
+export default useForm;
